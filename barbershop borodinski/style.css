@@ -1,0 +1,117 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a:visited {
+	color: #fff;
+}
+
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	background: url(../img/background.jpg) no-repeat top center;
+	color: #fff;
+	background-color: #0e0e0e;
+	min-width: 960px;
+}
+
+.main-header {
+	background-color: #000;
+}
+
+.container {
+	margin: 0px auto;
+	width: 940px;
+	padding: 0px 10px;
+}
+
+.main-navigation {
+	float: left;
+	width: 780px;
+	padding: 30px 0px;
+}
+
+.main-navigation ul li {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f7f4f1;
+	text-transform: uppercase;
+	margin-right: 40px;
+}
+
+.user-block a,.main-navigation ul li a {
+	text-decoration: none;
+	-display: block;
+}
+
+.user-block {
+	float: right;
+	max-width: 140px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f7f4f1;
+	padding: 30px 0px;
+}
+
+.row-first-block {
+	width: 920px;
+	margin: 0 auto;
+}
+
+.logo {
+	padding-top: 40px;
+	margin: 0 auto;
+	width: 376px;
+}
+
+.first-row {
+	width: 300px;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.second-row {
+	width: 300px;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.therd-row {
+	width: 300px;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.first-row p {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.second-row p {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.therd-row p {
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 30px;
+}
