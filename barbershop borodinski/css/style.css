@@ -14,7 +14,7 @@ body {
 	font-size: 14px;
 	background: url(../img/background.jpg) no-repeat top center;
 	color: #fff;
-	background-color: #0e0e0e;
+	background-color: #070707;
 	min-width: 960px;
 }
 
@@ -130,6 +130,7 @@ body {
 	color: black;
 	font-weight: bold;
 	box-sizing: border-box;
+	margin-bottom: 30px;
 }
 
 .news {
@@ -148,6 +149,8 @@ body {
 	float: right;
 	font-size: 30px;
 	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
 
 }
 
@@ -161,16 +164,163 @@ body {
 	margin-top: 45px;
 }
 
-.all-news {
-	margin-top: 37px;
+.images-photo {
+	padding-bottom: 50px;
 }
-
  .control-gallery {
+	-padding-top: 50px;
 	margin-top: 70px;
+	display: inline-block;
+	margin: 0 auto;
  }
+
 
 .date {
 	margin-top: 15px;
 	font-size: 14px;
 	font-weight: 400;
 }
+
+.button-all-news {
+	margin-top: 30px;
+}
+
+.btn {
+	background: #000000;
+	color: #fff;
+	border: 0px;
+	-width: 140px;
+	-height: 40px;
+	font-size: 14px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	-display: inline-block;
+	vertical-align: top;
+}
+
+.btn1 {
+	background: #000000;
+	color: #fff;
+	border: 0px;
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+
+}
+
+.contacts-block {
+	background: #fbf8f5;
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 55px 80px;
+	width: 940px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.contacts {
+	width: 440px;
+	float: left;
+}
+
+.enroll {
+	width: 300px;
+	float: right;
+}
+
+.buttons-contacts {
+	margin-top: 60px;
+}
+
+.input-form {
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	border: solid 2px #000;
+	margin-top: 20px;
+}
+
+.forms {
+	margin-bottom: 25px;
+}
+
+footer {
+	background: url(../img/footer.jpg) center;
+}
+.foot {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 65px;
+	padding-bottom: 45px;
+}
+.adress {
+	float: left;
+	width: 313px;	
+}
+
+.social-networks {
+	float: left;
+	width: 313px;	
+}
+
+.developer {
+	float: left;
+	width: 313px;	
+}
+
+
+.foot {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.social-networks p {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.networks {
+	margin: 0 auto;
+	width: 260px;
+	font-size: 18px;
+}
+
+.soc {
+	height: 16px;
+}
+
+.button-developer {
+	display: inline-block;
+	background: #000000;
+	color: #fff;
+	border: 0px;
+	font-size: 14px;
+	padding: 8px 33px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	vertical-align: top;
+	float: right;
+}
+
+.developer p {
+	margin-left: 150px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.buttons-social-networks {
+	display: inline-block;
+	margin-left: 25px;
+	width: 140px;
+	padding: 0px 40px;
+	
+}
+ .contact-info {
+ 	padding-bottom: 62px;
+ }
