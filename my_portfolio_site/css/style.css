@@ -290,6 +290,11 @@ footer {
 		margin: 0 auto;
 	}
 	
+	.photo {
+		max-width: 600px;
+		height: auto;
+	}
+
 	.main-photo img {
 		max-width: 600px;
 	}
@@ -377,6 +382,11 @@ footer {
 		margin: 0 auto;
 	}
 	
+	.photo {
+		max-width: 500px;
+		height: auto;
+	}
+
 	.main-photo img {
 		max-width: 500px;
 	}
