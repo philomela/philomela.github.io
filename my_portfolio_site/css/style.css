@@ -291,7 +291,7 @@ footer {
 	}
 	
 	.photo {
-		max-width: 600px;
+		max-width: 30%;
 		height: auto;
 	}
 
@@ -383,7 +383,7 @@ footer {
 	}
 	
 	.photo {
-		max-width: 500px;
+		max-width: 30%;
 		height: auto;
 	}
 
