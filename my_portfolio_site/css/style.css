@@ -396,6 +396,7 @@ footer {
 	}
 	
 	.name-site2 {
+		margin-top: 20px;
 		font-size: 20px;
 	}
 
@@ -417,7 +418,12 @@ footer {
 		font-size: 10px;
 	}
 
+	.portfolio {
+		margin-top: 30px;
+	}
+	
 	.name-site3 {
+		margin-top: 20px;
 		font-size: 20px;
 	}
 
@@ -487,7 +493,6 @@ footer {
 		width: 100%;
 		height: auto;
 	}
-
 
 	i.fa.fa-star-o::before  {
 		font-size: 30px;
