@@ -36,6 +36,10 @@ header {
 	position: absolute;
 }
 
+.touch-menu {
+	display: none;
+}
+
 .main-menu {
 	display: inline-block;
 	float: right;
@@ -364,9 +368,23 @@ footer {
 		margin-bottom: 50px;
 	}
 
+	.touch-menu {
+		display: inline-block;
+		float: right;
+		margin-top: 5px;
+		margin-right: 35px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	.touch-menu li {
+		list-style-type: none;
+	}
+
 	.main-menu {
-		margin-top: 10px;
-		font-size: 10px;
+		display: none;
 	}
 
 	.fa-bars::before {
