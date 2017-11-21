@@ -369,6 +369,7 @@ footer {
 	}
 
 	.touch-menu {
+		position: relative;
 		display: inline-block;
 		float: right;
 		margin-top: 5px;
@@ -381,6 +382,16 @@ footer {
 
 	.touch-menu li {
 		list-style-type: none;
+	}
+	
+	.touch-menu li ul {
+		display: none;
+	}
+
+	.touch-menu li:hover ul {
+		position: absolute;
+		z-index: 2;
+		display: block;
 	}
 
 	.main-menu {
