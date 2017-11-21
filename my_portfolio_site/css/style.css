@@ -297,10 +297,6 @@ footer {
 		height: auto;
 	}
 
-	.mdsain-photo img {
-		max-width: 600px;
-	}
-
 	i.fa.fa-star-o::before  {
 		font-size: 50px;
 	}
@@ -393,10 +389,6 @@ footer {
 	.photo {
 		max-width: 100%;
 		height: auto;
-	}
-
-	.madsin-photo img {
-		max-width: 500px;
 	}
 
 	i.fa.fa-star-o::before  {
@@ -496,11 +488,6 @@ footer {
 		height: auto;
 	}
 
-	.main-photo img {
-		max-width: 460px;
-		width: 100%;
-		height: auto;
-	}
 
 	i.fa.fa-star-o::before  {
 		font-size: 30px;
