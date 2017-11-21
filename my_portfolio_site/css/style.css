@@ -288,7 +288,7 @@ footer {
 	.main-photo {
 		max-width: 600px;
 		margin: 0 auto;
-		width: 30%;
+		width: 100%;
 		height: auto;
 	}
 	
@@ -336,7 +336,7 @@ footer {
 	}
     
 	.extemum-slide {
-		height: 300px;
+		height: 250px;
 	}
 
 	.contacts-left {
@@ -385,7 +385,7 @@ footer {
 	
 	.main-photo {
 		max-width: 500px;
-		width: 30%;
+		width: 100%;
 		height: auto;
 		margin: 0 auto;
 	}
@@ -432,7 +432,7 @@ footer {
 	.extremum-click {
 		font-size: 10px;
 	}
-
+    
 	.contacts-left {
 		font-size: 15px;
 	}
@@ -491,6 +491,11 @@ footer {
 		height: auto;
 	}
 	
+	.photo {
+		width: 100%;
+		height: auto;
+	}
+
 	.main-photo img {
 		max-width: 460px;
 		width: 100%;
@@ -552,7 +557,7 @@ footer {
 	}
 
 	.extremum-slide {
-		height: 300px;
+		height: 150px;
 	}
 
 	footer {
