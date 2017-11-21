@@ -499,6 +499,7 @@ footer {
 	}
 	
 	.name-site2 {
+		margin-top: 15px;
 		font-size: 20px;
 	}
 
@@ -520,7 +521,13 @@ footer {
 		font-size: 10px;
 	}
 
+	.portfolio {
+		margin-top: 20px;
+	}
+	
+
 	.name-site3 {
+		margin-top: 15px;
 		font-size: 20px;
 	}
 
