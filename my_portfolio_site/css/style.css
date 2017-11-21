@@ -334,6 +334,10 @@ footer {
 	.extremum-click {
 		font-size: 15px;
 	}
+    
+	.extemum-slide {
+		height: 300px;
+	}
 
 	.contacts-left {
 		font-size: 20px;
