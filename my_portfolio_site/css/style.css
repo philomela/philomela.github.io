@@ -293,11 +293,11 @@ footer {
 	}
 	
 	.photo {
-		max-width: 30%;
+		max-width: 100%;
 		height: auto;
 	}
 
-	.main-photo img {
+	.mdsain-photo img {
 		max-width: 600px;
 	}
 
@@ -387,11 +387,11 @@ footer {
 	}
 	
 	.photo {
-		max-width: 30%;
+		max-width: 100%;
 		height: auto;
 	}
 
-	.main-photo img {
+	.madsin-photo img {
 		max-width: 500px;
 	}
 
@@ -483,13 +483,13 @@ footer {
 	.main-photo {
 		max-width: 460px;
 		margin: 0 auto;
-		width: 30%;
+		width: 100%;
 		height: auto;
 	}
 	
 	.main-photo img {
 		max-width: 460px;
-		width: 30%;
+		width: 100%;
 		height: auto;
 	}
 
