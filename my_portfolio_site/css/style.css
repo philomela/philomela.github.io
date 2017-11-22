@@ -36,16 +36,16 @@ header {
 	position: absolute;
 }
 
-.touch-menu {
-	display: none;
-}
-
 .main-menu {
 	display: inline-block;
 	float: right;
 	margin-top: 15px;
 	margin-right: 15px;
 }
+
+.touch-menu, .mobile-menu, .menu {
+		display: none;
+	}
 
 .fa-bars::before {
 	color: white;
@@ -283,6 +283,10 @@ footer {
 		font-size: 15px;
 		margin-top: 5px;
 	}
+	
+	.touch-menu, .mobile-menu, .menu {
+		display: none;
+	}
 
 	.name-site1 {
 		max-width: 500px;
@@ -365,33 +369,87 @@ footer {
 @media (max-width: 768px) {
 	
 	.top-sidebar {
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 
-	.touch-menu {
+	.logo img {
+		width: auto;
+		height: 60px;
+	}
+
+	.menu {
+		display: none;
 		position: relative;
-		display: inline-block;
-		float: right;
-		margin-top: 5px;
-		margin-right: 35px;
-		color: white;
-		font-family: 'Roboto', sans-serif;
-		font-size: 15px;
-		text-transform: uppercase;
-	}
-
-	.touch-menu li {
-		list-style-type: none;
+		z-index:100;
+		max-width: 768px;
+		width: 100%;
+		margin: 0px;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+		padding: 0px;
 	}
 	
-	.touch-menu li ul {
-		display: none;
+	nav { 
+		max-width: 768px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 
-	.touch-menu li:hover ul {
-		position: absolute;
-		z-index: 2;
+	.mobile-menu {
 		display: block;
+		width: 100%;
+		max-width: 768px;
+		padding: 11px;
+		background: #451572;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-weight: 600;
+		position: relative;
+		z-index: 100;
+		box-sizing: border-box;
+	}
+
+	.menu li {
+		display: block;
+		margin: 0;
+	}
+
+	.menu li a {
+		background: #ffffff;
+		color: #373737;
+		border-top: 1px solid #e0e0e0;
+		border-left: 3px solid #ffffff;
+		font-weight: 600;
+		text-decoration: none;
+		padding: 11px;
+		display: block;
+		-webkit-transition: all 0.2s ease-in-out 0s;
+   		-moz-transition: all 0.2s ease-in-out 0s;
+   		-o-transition: all 0.2s ease-in-out 0s;
+   		-ms-transition: all 0.2s ease-in-out 0s;
+   		transition: all 0.2s ease-in-out 0s;
+	}
+
+	.menu li a:hover, .menu li:hover > a {
+		background: #f0f0f0;
+		color: #797979;
+		border-left: 3px solid #9CA3DA;
+	}
+
+	.menu ul {
+		display: block;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background: #ffffff;
+	}
+
+	.menu ul ul {
+		left: 0;
+		top: 0px;
 	}
 
 	.main-menu {
@@ -400,12 +458,14 @@ footer {
 
 	.fa-bars::before {
 		margin-top: 10px;
-		font-size: 15px;
+		font-size: 20px;
+		margin-right: 5px;
 	}
 
 	.name-site1 {
 		max-width: 400px;
 		font-size: 20px;
+		margin-top: 20px;
 	}
 	
 	.main-photo {

@@ -19,20 +19,8 @@
 				<div class="logo">
 					<img src="img/logo.png" width="200" height="auto" alt="">
 				</div>
-
-				<nav class="touch-menu">
-					<ul>
-					<li><i class="fa fa-bars" aria-hidden="true">Меню</i><ul>
-					<li><a href="#top1" class="scrollto">Главная</a></li>
-					<li><a href="#top2" class="scrollto">Обо мне</a></li>
-					<li><a href="#top3" class="scrollto">Портфолио</a></li>
-					<li><a href="#top4" class="scrollto">Контакты</a></li>
-					</ul></li>
-					</ul>
-				</nav>
-				
-				<nav class="main-menu">
-					<ul>
+				<nav class="main-menu clearfix">
+					<ul class="clearfix">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 					<li><a href="#top1" class="scrollto">Главная</a></li>
 					<li><a href="#top2" class="scrollto">Обо мне</a></li>
@@ -43,6 +31,16 @@
 			</div>
 				</div>
 		<div class="container">
+			<a id="touch-menu" class="mobile-menu" href="#">
+				<i class="fa fa-bars" aria-hidden="true"></i>Меню
+			</a>
+    		<nav>
+    			<ul class="menu">
+					<li><a href="#top2" class="scrollto">Обо мне</a></li>
+					<li><a href="#top3" class="scrollto">Портфолио</a></li>
+					<li><a href="#top4" class="scrollto">Контакты</a></li>
+ 	 			</ul>
+ 	 		</nav>
 				<h1 class="name-site1">Портфолио Front-End Разработчика</h1>
 				<div class="main-photo">
 				<img class="photo" src="img/bg-center.png" alt="">
@@ -153,7 +151,23 @@
 });
 </script>
 <script>
+	$(document).ready(function(){ 
+	var touch 	= $('#touch-menu');
+	var menu 	= $('.menu');
+
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
 	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 767 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});
 </script>
 </body>
 </html>
