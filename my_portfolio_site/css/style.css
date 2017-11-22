@@ -553,7 +553,7 @@ footer {
 @media (max-width: 480px) {
 	
 	.top-sidebar {
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 	}
 
 	.main-menu {
