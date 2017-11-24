@@ -367,14 +367,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-	
+
 	.top-sidebar {
-		margin-bottom: 0px;
+		display: none;
 	}
 
 	.logo img {
-		width: auto;
-		height: 60px;
+		display: none;
 	}
 
 	.menu {
