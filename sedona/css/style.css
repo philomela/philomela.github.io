@@ -305,3 +305,11 @@ footer {
 .hastag a {
 	text-decoration: none;
 }
+
+a:visited {
+	color: black;
+}
+
+a {
+	color: black;
+}
