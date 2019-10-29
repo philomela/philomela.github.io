@@ -1,0 +1,55 @@
+﻿@font-face {
+    font-family: AvantGardeGothic;
+    src: url("../../fonts/GothicAvanGarden.ttf") format("opentype");
+}
+
+body {
+    font-family: AvantGardeGothic;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+.wrapper {
+    width: 980px;
+    min-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.Login {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.footer {
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footer a {
+    color: white;
+    font-weight: bold;
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+.form {
+    border: 1px solid #ffffff;
+    padding-bottom: 10px;
+    width: 450px;
+    margin: 0 auto;
+}

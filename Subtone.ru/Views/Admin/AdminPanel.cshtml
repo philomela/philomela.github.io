@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+@using Subtone.ru.Models;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/adminpanel.css" rel="stylesheet" />
+    <script src="../../Content/js/jquery-3.4.1.min.js"></script>
+    <script async src="../../Content/js/admin.js"></script>
+    <title>AdminPanel</title>
+</head>
+<body>
+    <div>
+        <div><h1>Admin panel Subtone</h1> <a class="theme" href="#">Toggle Theme</a> <p class="time">Now: </p></div>
+        <h3>Booked dates:</h3>
+        @{
+            List<Reservation> dateReservation = new List<Reservation>();
+            foreach (Reservation R in ViewBag.Reservations)
+            {
+                dateReservation.Add(R);
+            }
+            var selectedDateReservations = from dR in dateReservation orderby dR.date group dR by dR.date;
+        }
+
+        @foreach (IGrouping<string, Reservation> R in selectedDateReservations)
+        {
+        <a id="@R.Key" class="dateBooking" href="#">
+            @R.Key
+        </a>
+        <ul>
+            @foreach (var dR in R)
+            {
+            <li class="record">@dR.studioId, @dR.Id, @dR.date, @dR.NamePerson, @dR.SurnamePerson, @dR.PhoneNumber, @dR.timeBusy, @dR.MessagePerson 
+            <p><a href="/Admin/Delete/@dR.Id">Delete</a></p><p><a href="/Admin/Delete/@dR.Id">Confirm</a></p></li>
+            }
+        </ul>
+
+        }
+    </div>
+
+</body>
+</html>

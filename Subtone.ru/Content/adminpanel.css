@@ -1,0 +1,55 @@
+﻿/* Theme Gray, White, Purple 'Standart' by Roman Solovyev*/
+
+@font-face {
+    font-family: AvantGardeGothic;
+    src: url("../../fonts/GothicAvanGarden.ttf") format("opentype");
+}
+
+body {
+    font-family: AvantGardeGothic;
+    --background: #0C2031;
+    background: black;
+    color: white;
+}
+
+h1 {
+    width: 75%;
+    display: inline-block;
+}
+
+.dateBooking, .record a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    font-weight: bolder;
+    border: 1px solid azure;
+    padding: 2px;
+    background: #286AA0;
+}
+
+ul {
+    display: none;
+    border: 1px solid azure;
+    padding-top: 10px;
+    background: #002441;
+}
+
+.record a {
+    background: #B2542D;
+}
+
+li.record {
+    border-left: 10px solid #49A27E;
+    border-top: 1px solid azure;
+}
+
+.theme {
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+}
+
+.time {
+    display: inline-block;
+    margin-left: 4%;
+}
