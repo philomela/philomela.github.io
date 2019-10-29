@@ -138,16 +138,16 @@ namespace Subtone.ru.Controllers
         {
             try
             {
-                MailAddress from = new MailAddress("administration@subton.ru", "Subtone team");
-                MailAddress to = new MailAddress(reservation.EmailAdress);// проверить email try catch исключение если неправильный email.
+                MailAddress from = new MailAddress("*", "Subtone team");
+                MailAddress to = new MailAddress(reservation.EmailAdress);
                 MailMessage m = new MailMessage(from, to);
                 m.Subject = "Booking Confirmation";
-                m.Body = $"<h2 style=\"font-size:18px;\">You have booked a studio at www.subtone.ru.</h2><p>Hi {reservation.NamePerson}! " +
+                m.Body = $"<h2 style=\"font-size:18px;\">You have booked a studio at *</h2><p>Hi {reservation.NamePerson}! " +
                     $"Please confirm your reservation.We look forward to meeting you. To confirm the reservation, " +
-                    $"follow the link: http://www.subtone.ru/Home/Confirm/" + $"{reservation.hashConfirmed}</a></p><p></p>";
+                    $"follow the link: http://*/Home/Confirm/" + $"{reservation.hashConfirmed}</a></p><p></p>";
                 m.IsBodyHtml = true;
-                SmtpClient smtp = new SmtpClient("subtone.ru", 25);
-                smtp.Credentials = new NetworkCredential("administration@subtone.ru", "W!2HSTzz");
+                SmtpClient smtp = new SmtpClient("*", 25);
+                smtp.Credentials = new NetworkCredential("administration@*", "*");
                 smtp.EnableSsl = false;
                 smtp.Send(m);
             }
@@ -161,13 +161,13 @@ namespace Subtone.ru.Controllers
             try
             {
                 MailAddress from = new MailAddress(feedback.emailSender, "Subtone Feedbacks");
-                MailAddress to = new MailAddress("subtone.ru@yandex.ru");// проверить email try catch исключение если неправильный email.
+                MailAddress to = new MailAddress("*");
                 MailMessage m = new MailMessage(from, to);
                 m.Subject = $"Feedback from {feedback.nameSender}";
                 m.Body = $"<p>{feedback.commentMessage} from {feedback.emailSender}</p>";
                 m.IsBodyHtml = true;
                 SmtpClient smtp = new SmtpClient("subtone.ru", 25);
-                smtp.Credentials = new NetworkCredential("administration@subtone.ru", "W!2HSTzz");
+                smtp.Credentials = new NetworkCredential("*", "*");
                 smtp.EnableSsl = false;
                 smtp.Send(m);
             }

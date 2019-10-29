@@ -8,16 +8,6 @@ namespace Subtone.ru.Models
 {
     public class UsersContext : DbContext
     {
-
-        //static UsersContext()
-        //{
-        //    Database.SetInitializer<UsersContext>(new DBInitializer());
-        //}
-
-
-        //public UsersContext() : base("DefaultConnection")
-        //{ }
-
         public DbSet<Reservation> DateTimeReservation { get; set; }
 
         public DbSet<Feedback> Feedbacks { get; set; }

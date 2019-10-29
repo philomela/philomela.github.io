@@ -30,12 +30,6 @@ namespace Subtone.ru
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Admin", action = "LoginForm", id = UrlParameter.Optional }
            );
-           // routes.MapRoute(
-           //    name: "Admin",
-           //    url: "{controller}/{action}/{id}",
-           //    defaults: new { controller = "Admin", action = "Index", id = UrlParameter.Optional }
-           //);
-
         }
     }
 }
