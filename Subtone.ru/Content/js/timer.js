@@ -6,6 +6,6 @@ function timerDecrement() {
     time.text(newTime);
     if (newTime === 0) {
         clearInterval(intervalId);
-        window.location = "http://www.subtone.ru";
+        window.location = "http://*";
     };
 }
