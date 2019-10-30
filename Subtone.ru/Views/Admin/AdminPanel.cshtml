@@ -17,7 +17,7 @@
 </head>
 <body>
     <div>
-        <div><h1>Admin panel Subtone</h1> <a class="theme" href="#">Toggle Theme</a> <p class="time">Now: </p></div>
+        <div><h1>Admin panel Subtone</h1><p class="date">Today: @DateTime.Now.ToString("dd.MM.yyyy")</p></div>
         <h3>Booked dates:</h3>
         @{
             List<Reservation> dateReservation = new List<Reservation>();
@@ -30,17 +30,28 @@
 
         @foreach (IGrouping<string, Reservation> R in selectedDateReservations)
         {
-        <a id="@R.Key" class="dateBooking" href="#">
-            @R.Key
-        </a>
-        <ul>
-            @foreach (var dR in R)
-            {
-            <li class="record">@dR.studioId, @dR.Id, @dR.date, @dR.NamePerson, @dR.SurnamePerson, @dR.PhoneNumber, @dR.timeBusy, @dR.MessagePerson 
-            <p><a href="/Admin/Delete/@dR.Id">Delete</a></p><p><a href="/Admin/Delete/@dR.Id">Confirm</a></p></li>
-            }
-        </ul>
-
+            <a id="@R.Key" class="dateBooking" href="#">
+                @R.Key
+            </a>
+            <ul>
+                @foreach (var dR in R)
+                {
+                    <li class="record clearfix">
+                        <b>Confirmed:</b> @dR.confirmedReservation, <b>Studio:</b> @dR.studioId, <b>Date:</b> @dR.date,  <b>Time:</b> @dR.timeBusy, <b>Name:</b> @dR.NamePerson, <b>Surname:</b> @dR.SurnamePerson, <b>Phone:</b> @dR.PhoneNumber, <b>Message:</b>
+                        @{if (string.IsNullOrEmpty(dR.MessagePerson))
+                            {
+                                @dR.MessagePerson
+                            }
+                            else
+                            {
+                                string Message = dR.MessagePerson.Length >= 30 ? dR.MessagePerson.Substring(0, 30) : dR.MessagePerson;
+                                @Message.ToString();
+                            }
+                        }
+                        <p><a class="delete_record" href="/Admin/Delete/@dR.Id">Delete</a></p><p><a class="confirm_record" href="/Admin/ConfirmAdmin/@dR.hashConfirmed">Confirm</a></p>
+                    </li>
+                }
+            </ul>
         }
     </div>
 
