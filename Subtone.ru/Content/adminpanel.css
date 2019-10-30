@@ -1,4 +1,9 @@
 ﻿/* Theme Gray, White, Purple 'Standart' by Roman Solovyev*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 @font-face {
     font-family: AvantGardeGothic;
@@ -34,22 +39,31 @@ ul {
     background: #002441;
 }
 
-.record a {
-    background: #B2542D;
+.delete_record {
+    background: #B2542D !important;
+}
+
+.record p {
+    display: inline-block;
+    float: right;
+}
+
+.record b {
+    color: black;
+}
+
+.confirm_record {
+    background: #49A27E !important;
 }
 
 li.record {
     border-left: 10px solid #49A27E;
     border-top: 1px solid azure;
+    background: #286AA0;
 }
 
-.theme {
-    display: inline-block;
-    text-decoration: none;
-    color: azure;
-}
-
-.time {
+.date {
     display: inline-block;
     margin-left: 4%;
+    font-weight: bolder;
 }
