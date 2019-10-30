@@ -7,7 +7,6 @@ using Subtone.ru.Models;
 using System.Security.Cryptography;
 using System.Text;
 using System.Data.Entity;
-using System.Web.Mvc.Filters;
 using System.Web.Security;
 
 namespace Subtone.ru.Controllers
@@ -88,7 +87,45 @@ namespace Subtone.ru.Controllers
             }
         }
 
-       // []
+        [HttpGet]
+        public ActionResult ConfirmAdmin(object id)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                int countConfirm = 0;
+                using (UsersContext dbReservation = new UsersContext())
+                {
+                    IEnumerable<Reservation> reservations = dbReservation.DateTimeReservation;
+                    foreach (Reservation reservation in reservations)
+                    {
+                        if (reservation.hashConfirmed == Convert.ToString(id) && reservation.confirmedReservation == 1 && (reservation.dateRequest - DateTime.Now)
+                            .TotalDays < 1)
+                        {
+                            reservation.confirmedReservation = 2;
+                            countConfirm++;
+                            continue;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                    if (countConfirm != 0)
+                    {
+                        dbReservation.SaveChanges();
+                        return Index();
+                    }
+                    else
+                    {
+                        return View("~/Views/Shared/Error.cshtml");
+                    }
+                }
+            }
+            else
+            {
+                return Redirect("/Admin/LoginForm");
+            }
+        }
 
         private string GetHash(string inputPass)
         {
