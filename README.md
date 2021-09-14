@@ -4,7 +4,8 @@ Repository contains static projects writing with HTML + CSS + JavaScript
 ### How start projects?
 The current repository is connected and working with github pages.
 
-In order to launch and visually view projects, go to the address bar of your browser to: `philomela.github.io/[name_project]`
+In order to launch and visually view projects, go to the address bar of your browser to: `philomela.github.io/[name_project]` 
+> when [name_project] is name folder project.
 
 Example: `philomela.github.io/gllacy`
 
