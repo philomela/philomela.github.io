@@ -45,7 +45,6 @@ body {
 
 .user-block a,.main-navigation ul li a {
 	text-decoration: none;
-	-display: block;
 }
 
 .user-block {
@@ -168,7 +167,6 @@ body {
 	padding-bottom: 50px;
 }
  .control-gallery {
-	-padding-top: 50px;
 	margin-top: 70px;
 	display: inline-block;
 	margin: 0 auto;
@@ -189,14 +187,11 @@ body {
 	background: #000000;
 	color: #fff;
 	border: 0px;
-	-width: 140px;
-	-height: 40px;
 	font-size: 14px;
 	padding: 10px 20px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 500;
-	-display: inline-block;
 	vertical-align: top;
 }
 
